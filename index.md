@@ -10,7 +10,7 @@ title: ASL La Garenne
 
 <section id="actualites" aria-labelledby="titre-actualites">
   <h2 id="titre-actualites">Actualités</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 3 %}
     <article class="content-card">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <div class="post-preview">
