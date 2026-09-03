@@ -1,0 +1,9 @@
+title: ASL La Garenne
+description: Informations, projets et actualités de l'ASL La Garenne.
+lang: fr
+timezone: Europe/Paris
+permalink: /actualites/:year/:month/:day/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
