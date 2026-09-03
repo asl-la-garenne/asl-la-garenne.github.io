@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'fr' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <p>Informations et actualités du lotissement</p>
+        <nav aria-label="Navigation principale">
+          <a href="{{ '/' | relative_url }}#asl">L'ASL</a>
+          <a href="{{ '/' | relative_url }}#projets">Projets</a>
+          <a href="{{ '/' | relative_url }}#actualites">Actualités</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="container">{{ site.title }}</div>
+    </footer>
+  </body>
+</html>
