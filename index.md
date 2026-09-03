@@ -13,6 +13,9 @@ title: ASL La Garenne
   {% for post in site.posts %}
     <article class="content-card">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <div class="post-preview">
+        {{ post.content }}
+      </div>
       <a class="read-more" href="{{ post.url | relative_url }}">Lire la suite</a>
     </article>
   {% endfor %}
