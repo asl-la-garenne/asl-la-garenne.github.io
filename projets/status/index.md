@@ -16,6 +16,7 @@ permalink: /projets/status/
 <h2>Votre participation est indispensable</h2>
 <p>Le vote ne pourra être valable que si un quorum de 2/3 des membres est réuni. Merci de venir à l'assemblée générale ou, si vous ne pouvez pas vous déplacer, de donner votre pouvoir à un autre membre de l'ASL. Chaque voix compte.</p>
 
+<h2>Articles</h2>
 <p>Le projet est présenté en huit articles :</p>
 
 <ol class="article-list">
