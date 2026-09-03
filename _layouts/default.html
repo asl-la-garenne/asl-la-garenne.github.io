@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
   </head>
   <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="container">
-        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <div class="container header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <span class="brand-mark" aria-hidden="true">AG</span>
+          <span>
+            <span class="brand-kicker">Association syndicale libre</span>
+            <span class="brand-name">{{ site.title }}</span>
+          </span>
+        </a>
         <nav aria-label="Navigation principale">
-          <a href="{{ '/' | relative_url }}#asl">L'ASL</a>
-          <a href="{{ '/projets/' | relative_url }}">Projets</a>
-          <a href="{{ '/actualites/' | relative_url }}">Actualités</a>
+          <a href="{{ '/' | relative_url }}#asl"{% if page.url == '/' %} aria-current="page"{% endif %}>L'ASL</a>
+          <a href="{{ '/projets/' | relative_url }}"{% if page.url contains '/projets' %} aria-current="page"{% endif %}>Projets</a>
+          <a href="{{ '/actualites/' | relative_url }}"{% if page.url contains '/actualites' or page.layout == 'post' %} aria-current="page"{% endif %}>Actualités</a>
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main id="contenu" class="container">
       {{ content }}
     </main>
     <footer class="site-footer">
