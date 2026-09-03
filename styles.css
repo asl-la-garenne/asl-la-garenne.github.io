@@ -71,6 +71,38 @@ section + section {
   margin-bottom: 0;
 }
 
+.post-preview {
+  max-height: 12rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.post-preview::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  bottom: 0;
+  content: "";
+  height: 3rem;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+.read-more {
+  background: #2f5d3a;
+  border-radius: .25rem;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+.read-more:hover,
+.read-more:focus {
+  background: #23472c;
+}
+
 .article-list {
   padding-left: 1.5rem;
 }
