@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Article 7 — Modification des statuts
-permalink: /statuts-07.html
+title: Article 4 — Conseil syndical
+permalink: /projets/status/statuts-04.html
 ---
 
 Le contenu de cet article sera publié dans le cadre de la mise à jour des statuts.
