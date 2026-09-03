@@ -13,8 +13,7 @@ title: ASL La Garenne
   {% for post in site.posts %}
     <article class="content-card">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
-      {{ post.excerpt }}
+      <a class="read-more" href="{{ post.url | relative_url }}">Lire la suite</a>
     </article>
   {% endfor %}
 </section>
