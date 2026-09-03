@@ -63,6 +63,10 @@ section + section {
   padding: 1.5rem;
 }
 
+.content-card + .content-card {
+  margin-top: 1.5rem;
+}
+
 .content-card > :first-child {
   margin-top: 0;
 }
@@ -72,7 +76,7 @@ section + section {
 }
 
 .post-preview {
-  max-height: 12rem;
+  max-height: 8rem;
   overflow: hidden;
   position: relative;
 }
