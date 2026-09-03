@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Les informations de l'ASL La Garenne.">
+    <meta name="description" content="Informations, projets et actualités de l'ASL La Garenne.">
     <title>ASL La Garenne</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -12,15 +12,23 @@
       <div class="container">
         <a class="brand" href="index.html">ASL La Garenne</a>
         <p>Informations et actualités du lotissement</p>
+        <nav aria-label="Navigation principale">
+          <a href="#asl">L'ASL</a>
+          <a href="#projets">Projets</a>
+          <a href="#actualites">Actualités</a>
+        </nav>
       </div>
     </header>
     <main class="container">
-      <section>
-        <h1>Actualités</h1>
-        <p>Bienvenue sur le site d'information de l'Association Syndicale Libre La Garenne.</p>
+      <section id="asl" class="intro" aria-labelledby="titre">
+        <h1 id="titre">Bienvenue à l'ASL La Garenne</h1>
+        <p>L'Association Syndicale Libre (ASL) La Garenne réunit les propriétaires du lotissement. Elle veille à la gestion, à l'entretien et à la préservation des intérêts communs du quartier.</p>
+        <p>Ce site rassemble les informations utiles, les projets en cours et les actualités de l'association.</p>
       </section>
-      <section aria-labelledby="statuts">
-        <h2 id="statuts">Mise à jour des statuts</h2>
+      <section id="projets" aria-labelledby="titre-projets">
+        <h2 id="titre-projets">Projets</h2>
+        <article class="content-card" aria-labelledby="statuts">
+          <h3 id="statuts">Mise à jour des statuts</h3>
         <p>Le projet de mise à jour des statuts est présenté en huit articles.</p>
         <ol class="article-list">
           <li><a href="statuts-01.html">Article 1 — Objet de l'association</a></li>
@@ -32,6 +40,14 @@
           <li><a href="statuts-07.html">Article 7 — Modification des statuts</a></li>
           <li><a href="statuts-08.html">Article 8 — Dispositions finales</a></li>
         </ol>
+        </article>
+      </section>
+      <section id="actualites" aria-labelledby="titre-actualites">
+        <h2 id="titre-actualites">Actualités</h2>
+        <article class="content-card">
+          <h3>Le site de l'ASL est en ligne</h3>
+          <p>Retrouvez ici les informations importantes concernant la vie du lotissement et les projets portés par l'association.</p>
+        </article>
       </section>
     </main>
     <footer class="site-footer">

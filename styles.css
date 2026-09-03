@@ -25,6 +25,18 @@ body {
   margin-bottom: 0;
 }
 
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.site-header nav a {
+  color: inherit;
+  font-weight: 600;
+}
+
 .brand {
   color: inherit;
   font-size: 1.5rem;
@@ -34,6 +46,29 @@ body {
 
 a {
   color: #1c5a31;
+}
+
+section + section {
+  margin-top: 3rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+}
+
+.content-card {
+  background: #fff;
+  border: 1px solid #d9ddd6;
+  border-radius: .25rem;
+  padding: 1.5rem;
+}
+
+.content-card > :first-child {
+  margin-top: 0;
+}
+
+.content-card > :last-child {
+  margin-bottom: 0;
 }
 
 .article-list {
